@@ -38,8 +38,8 @@ body {
 }
 
 #banner_logo {
-    float: right ;
-    
+    float: right;
+
 }
 
 
@@ -403,4 +403,16 @@ button:hover {
 /* Font Awesome Icon */
 button i {
     margin-right: 5px;
+}
+
+.product-container {
+    width: 60%;
+    border: 20px solid black;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.product-container p {
+    text-align: left;
 }
