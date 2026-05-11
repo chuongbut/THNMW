@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+:root{
+    font-family: "Supermercado One", sans-serif;
+}
+header{
+    display: flex;  
+    justify-content: space-between;
+    background-color: aqua;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0; 
+}
+.left-header{
+    background-color: blue;
+    padding: 10px;
+    width: 50%;
+}
+.right-header{
+    background-color: lightblue;
+    display: flex;
+    color: white;
+    width: 50%;
+}
+main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+main div{
+    height: 500px;
+}
+.main1{
+    display: flex;
+    background-color: red;
+}
+.main1 aside{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    margin-right: 10px;
+}
+footer{
+    margin-top: 50px;
+    height: 300px;
+    background-color: pink;
+}
+.list_item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.product_item{
+    width: 200px;
+    height: 300px;
+    background-color: lightblue;
+}

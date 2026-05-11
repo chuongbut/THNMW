@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Supermercado+One&display=swap');
+:root{
+    font-family: "Supermercado One", sans-serif;
+}
+.menu-doc{
+   
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 250px;
+}
+.menu-doc li{
+    background-color: rgb(0, 132, 255);
+    line-height: 30px;
+    height: 40px;
+    margin-bottom: 2px;
+    padding: 10px;
+}
+.menu-doc li:hover{
+    background-color: aqua;
+    font-style: italic;
+}
+.menu-doc a{
+    text-decoration: none;
+}
+.menu-ngang{
+    margin: 0 auto;
+    background-color: aquamarine;
+    list-style: none;
+    min-height: 30px;
+    display: flex;
+    width: 400px;
+}
+.menu-ngang li{
+    line-height: 30px;
+    padding: 5px;
+}
+.menu-ngang a{
+    text-decoration: none;
+}
+.menu-ngang li:hover{
+    background-color:  orange;
+    border-radius: 5px;
+}
+.menu-ngang li a:hover{
+    color: white;
+    font-weight: bold;
+}
+.supermercado-one-regular {
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
