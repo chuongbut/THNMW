@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>A= </td>
+            <td><input type="text" name="" id="A"> </td>
+        </tr>
+        <tr>
+            <td>B= </td>
+            <td><input type="text" name="" id="B"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+               <button onclick="caculate('+')">+</button>
+               <button onclick="caculate('-')">-</button>
+               <button onclick="caculate('*')">*</button>
+               <button onclick="caculate('/')">/</button>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>Ket Qua = </td>
+            <td><input type="text" name="" id="ketqua" disabled></td>
+        </tr>
+    </table>
+    <script>
+        let a=document.getElementById("A")
+        let b=document.getElementById("B")
+        let kq=document.getElementById("ketqua")
+        function caculate(pheptoan){
+            const A=Number(a.value)
+            const B=Number(b.value)
+            let result
+            if(pheptoan==="+"){
+                result=A+B
+            }
+            if(pheptoan==="-"){
+                result=A-B
+            }
+            if(pheptoan==="*"){
+                result=A*B
+            }
+            if(pheptoan==="/"){
+                if(B===0){
+                    kq.value="Khong chia cho 0"
+                    return
+                }
+                result=A/B
+            }
+            kq.value=result
+        }
+    </script>
+</body>
+</html>

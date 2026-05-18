@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                Nhap tien te:
+            </td>
+            <td>
+                <input type="text" name="" id="local">
+            </td>
+            <td>
+                <select id="select">
+                    <option value="USD">USD</option>
+                    <option value="CNY">CNY</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="setValue">1 USD=22 000VND</td>
+        </tr>
+        <tr>
+            <td>Thanh tien :</td>
+            <td><input type="text" id="VND" disabled></td>
+            <td>VND</td>
+        </tr>
+    </table>
+    <script>
+        let local=document.getElementById('local')
+        let option=document.getElementById('select')
+        const USD_to_VND=22000
+        const CNY_TO_VND=3800
+        const setValue=document.getElementById('setValue')
+        let kq=document.getElementById('VND')
+        function trans(){
+            const input=parseFloat(local.value)
+            const selectOption=option.value
+            let result
+            if(selectOption==='USD'){
+                setValue.textContent="1 USD=22 000VND"
+                result=input*USD_to_VND
+                kq.value=result
+            }
+            else{
+                setValue.textContent="1 CNY=3 800VND"
+                result=input*CNY_TO_VND
+                kq.value=result
+            }
+        }
+        local.addEventListener("input",trans)
+        option.addEventListener("change",trans)
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    
+    <style>
+        .box {
+            border: 2px solid black;
+            width: 400px;
+            padding: 20px;
+            margin: 50px auto;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            border: 1px solid #ccc;
+            padding: 15px;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2 style="text-align: center; margin-bottom: 15px;">User Information</h2>
+        
+        <div id="giao-dien" class="content"></div>
+    </div>
+
+    <script>
+
+        const duLieuJson = `{
+            "Name": "Nguyễn Văn A",
+            "Age": 30,
+            "Email": "nguyenvana@stu.edu.vn",
+            "Address": "Ho Chi Minh, NY 10001"
+        }`;
+
+   
+        const user = JSON.parse(duLieuJson);
+
+       
+        document.getElementById("giao-dien").innerHTML = 
+            "<p><b>Name:</b> " + user.Name + "</p>" +
+            "<p><b>Age:</b> " + user.Age + "</p>" +
+            "<p><b>Email:</b> " + user.Email + "</p>" +
+            "<p><b>Address:</b> " + user.Address + "</p>";
+    </script>
+
+</body>
+</html>
